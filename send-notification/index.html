@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Dashboard Send Notification</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+</head>
+<body>
+    <div class="send-notificsation-wrapper">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
+                    <form class="send-notification-form--create float-left w-100">
+                        <h4 class="mb-3 text-center section-title">Send Notification</h4>
+                        <div class="form-group">
+                            <label for="videeoURL" class="mb-1">Enter the video UTL</label>
+                            <input type="text" class="form-control" id="videeoURL" aria-describedby="videeoURL" placeholder="Enter the video URL" required />
+                        </div>
+                        <figure class="video-preview d-flex align-items-center flex-column flex-md-row">
+                            <img src="https://img.youtube.com/vi/PWm2-4iAOIY/maxresdefault.jpg" class="img-fluid mb-md-0 mb-2"/>
+                            <figcaption class="video-preview--details text-md-left text-center">
+                                <h6 class="mb-0">Product Overview of AI Player</h6>
+                                <p class="mb-0">Duration: 0:10:31</p>
+                            </figcaption>
+                        </figure>
+                        <div class="alert alert-danger d-none" role="alert">
+                            Sorry, entered video URL is not found.
+                        </div>
+                        <div class="form-group">
+                            <label for="notificationTitle" class="mb-1">Notifictaion Title</label>
+                            <input type="text" class="form-control" id="notificationTitle" aria-describedby="notificationTitle" placeholder="Enter the Notifictaion Title">
+                        </div>
+                        <div class="form-group">
+                            <label for="organization" class="mb-1">Organization</label>
+                            <select class="form-control">
+                                <option value="videoken">VideoKen</option>
+                                <option value="bosch">Bosch</option>
+                            </select>
+                        </div>
+                        <div class="send-notification-form--create--cta-wrapper float-left w-100">
+                            <button type="submit" class="btn btn-info float-left">Send</button>
+                            <button type="button" class="btn btn-danger float-right">Cancel</button>
+                        </div>
+                    </form>
+                </div>
+                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
+                </div>
+            </div>
+        </div>
+    </div>
+    <link rel="stylesheet" href="/styles/style.css"/>
+    <link rel="stylesheet" href="/styles/notification.css"/>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>
